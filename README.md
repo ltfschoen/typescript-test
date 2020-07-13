@@ -29,3 +29,4 @@ yarn build-examples
 
 * https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html
 * https://www.typescriptlang.org/docs/handbook/react-&-webpack.html
+* https://www.geekabyte.io/2017/10/understanding-declaration-files-in.html

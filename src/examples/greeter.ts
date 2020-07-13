@@ -1,19 +1,17 @@
+// https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html
+/// <reference path="./greeter/index.d.ts" />
+
 class Student {
   fullName: string;
-  constructor(public firstName: string, public middleInitial: string, public lastName: string) {
-      this.fullName = firstName + " " + middleInitial + " " + lastName;
+  constructor(public firstName: string, public lastName: string) {
+    this.fullName = firstName + " " + lastName;
   }
 }
 
-interface Person {
-  firstName: string;
-  lastName: string;
-}
-
-function greeter(person: Person) {
+function greeter(person: GreeterTypes.Person): string {
   return "Hello, " + person.firstName + " " + person.lastName;
 }
 
-let user = new Student("Jane", "M.", "User");
+let user = new Student("Jane", "User");
 
 document.body.textContent = greeter(user);

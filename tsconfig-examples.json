@@ -3,6 +3,7 @@
     "outFile": "./build/examples.js",
     "sourceMap": false,
     "noImplicitAny": true,
+    "noImplicitThis": true,
     "module": "system",
     "moduleResolution": "node",
     "removeComments": false,

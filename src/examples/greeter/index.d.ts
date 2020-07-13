@@ -12,10 +12,12 @@ declare namespace GreeterTypes {
   }
 
   namespace StudentLib {
+    let studentId: string|number;
     let fullName: string;
   }
 
   interface Person {
+    readonly id: string|number;
     firstName: string;
     lastName?: string;
   }

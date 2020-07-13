@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outFile": "./build/examples.js",
+    "sourceMap": false,
+    "noImplicitAny": true,
+    "module": "system",
+    "moduleResolution": "node",
+    "removeComments": false,
+    "target": "es6",
+    "types" : []
+  },
+  "files": [
+    "./src/examples/greeter.ts",
+  ],
+  "include": [
+    "src/examples/**/*"
+  ],
+  "exclude": [
+    "node_modules/**/*",
+    "**/*.tsx",
+    "**/*.spec.ts"
+  ]
+}
